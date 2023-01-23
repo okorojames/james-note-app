@@ -22,11 +22,12 @@ body{
   color: $dark--one;
 }
 header{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: $dark--two;
+  z-index: 9999;
   & nav{
     display: flex;
     justify-content: space-between;
@@ -121,6 +122,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 8rem;
     & .note-holder{
       box-shadow: 0 0 0 2px $dark--one;
       border-radius: .5rem;
@@ -154,8 +156,9 @@ header{
       & .note-body{
         transition: all .5s ease-in-out;
         border-bottom: 1.5px solid $dark--one;
-        padding-bottom: 1rem;
-        margin-bottom: 2rem;
+        padding-bottom: .8rem;
+        margin-bottom: 1.2rem;
+        display: none;
         & .node-body-h4{
         font-size: 2.2rem;
         display: flex;
@@ -168,6 +171,44 @@ header{
         }
       }
       }
+      // 
+      // FOOTER SECTION
+      // 
+      & .footer-p{
+        font-style: italic;
+        font-weight: 500;
+        & .date-created{
+          color: $main--one;
+        }
+      }
     }
   }
+}
+// 
+// 
+// 
+#footer-section{
+  background: $dark--one;
+  color: $light--one;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  padding: 2rem 0;
+  & .footer-section-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    & .footer-section-second-context a{
+      color: $light--two;
+      margin-left: 1rem;
+    }
+  }
+}
+// 
+// 
+.noteBodyToggle.note-body{
+  display: block !important;
 }

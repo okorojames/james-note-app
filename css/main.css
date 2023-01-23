@@ -20,11 +20,12 @@ body {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: #162050;
+  z-index: 9999;
 }
 header nav {
   display: flex;
@@ -115,6 +116,7 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 8rem;
 }
 #notes-section .notes-section-container .note-holder {
   box-shadow: 0 0 0 2px #0b1028;
@@ -144,8 +146,9 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
 #notes-section .notes-section-container .note-holder .note-body {
   transition: all 0.5s ease-in-out;
   border-bottom: 1.5px solid #0b1028;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+  display: none;
 }
 #notes-section .notes-section-container .note-holder .note-body .node-body-h4 {
   font-size: 2.2rem;
@@ -157,4 +160,36 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   color: #162050;
   font-size: 1.8rem;
   font-weight: 500;
+}
+#notes-section .notes-section-container .note-holder .footer-p {
+  font-style: italic;
+  font-weight: 500;
+}
+#notes-section .notes-section-container .note-holder .footer-p .date-created {
+  color: #364fc7;
+}
+
+#footer-section {
+  background: #0b1028;
+  color: #d7dcf4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  padding: 2rem 0;
+}
+#footer-section .footer-section-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#footer-section .footer-section-container .footer-section-second-context a {
+  color: #8695dd;
+  margin-left: 1rem;
+}
+
+.noteBodyToggle.note-body {
+  display: block !important;
 }/*# sourceMappingURL=main.css.map */
