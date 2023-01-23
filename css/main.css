@@ -104,4 +104,36 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   font-size: 1.8rem;
   padding: 0 0.6rem;
   cursor: pointer;
+}
+
+#notes-section {
+  margin-top: 6rem;
+}
+#notes-section .notes-section-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#notes-section .notes-section-container .note-holder {
+  box-shadow: 0 0 0 2px #0b1028;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+}
+#notes-section .notes-section-container .note-holder .note-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#notes-section .notes-section-container .note-holder .note-title .note-title-h4 {
+  font-size: 2.2rem;
+}
+#notes-section .notes-section-container .note-holder .note-title .note-title-h4 .note--title {
+  margin-left: 1rem;
+}
+#notes-section .notes-section-container .note-holder .note-title-arrow-icon {
+  font-size: 3.2rem;
+  font-weight: 700;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

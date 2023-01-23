@@ -110,3 +110,37 @@ header{
     }
   }
 }
+// 
+// 
+// 
+#notes-section{
+  margin-top: 6rem;
+  & .notes-section-container{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & .note-holder{
+      box-shadow: 0 0 0 2px $dark--one;
+      border-radius: .5rem;
+      padding: .6rem 1.2rem;
+      & .note-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        & .note-title-h4{
+          font-size: 2.2rem;
+          & .note--title{
+            margin-left: 1rem;
+          }
+        }
+      }
+      & .note-title-arrow-icon{
+        font-size: 3.2rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}
