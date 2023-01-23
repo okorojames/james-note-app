@@ -19,6 +19,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   background: $light--one;
+  color: $dark--one;
 }
 header{
   position: absolute;
@@ -71,6 +72,41 @@ header{
       box-shadow: none;
       background: $light--one;
       color: $dark--two;
+    }
+  }
+}
+// 
+// 
+// 
+#search-section{
+  padding-top: 20rem;
+  & .search-section-container{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    & .search-section-h4{
+      font-size: 2.2rem;
+    }
+    & .searchFrom{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      color: $light--one;
+      background: $dark--one;
+      & .search-input-box, & .search-input-box:hover, & .search-input-box:active{
+        font-size: 1.6rem;
+        padding: .5rem 1rem .5rem .6rem;
+        border: 2px solid $dark--one;
+        outline: none;
+      }
+      & .search-icon{
+        font-size: 1.8rem;
+        padding: 0 .6rem;
+        cursor: pointer;
+      }
     }
   }
 }

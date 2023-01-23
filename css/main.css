@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   background: #d7dcf4;
+  color: #0b1028;
 }
 
 header {
@@ -70,4 +71,37 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   box-shadow: none;
   background: #d7dcf4;
   color: #162050;
+}
+
+#search-section {
+  padding-top: 20rem;
+}
+#search-section .search-section-container {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+#search-section .search-section-container .search-section-h4 {
+  font-size: 2.2rem;
+}
+#search-section .search-section-container .searchFrom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #d7dcf4;
+  background: #0b1028;
+}
+#search-section .search-section-container .searchFrom .search-input-box, #search-section .search-section-container .searchFrom .search-input-box:hover, #search-section .search-section-container .searchFrom .search-input-box:active {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem 0.5rem 0.6rem;
+  border: 2px solid #0b1028;
+  outline: none;
+}
+#search-section .search-section-container .searchFrom .search-icon {
+  font-size: 1.8rem;
+  padding: 0 0.6rem;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
