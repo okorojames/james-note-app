@@ -125,15 +125,36 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid #0b1028;
+  padding-bottom: 1rem;
 }
 #notes-section .notes-section-container .note-holder .note-title .note-title-h4 {
   font-size: 2.2rem;
 }
 #notes-section .notes-section-container .note-holder .note-title .note-title-h4 .note--title {
   margin-left: 1rem;
+  color: #162050;
 }
 #notes-section .notes-section-container .note-holder .note-title-arrow-icon {
   font-size: 3.2rem;
   font-weight: 700;
   cursor: pointer;
+}
+#notes-section .notes-section-container .note-holder .note-body {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1.5px solid #0b1028;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+#notes-section .notes-section-container .note-holder .note-body .node-body-h4 {
+  font-size: 2.2rem;
+  display: flex;
+  gap: 1rem;
+}
+#notes-section .notes-section-container .note-holder .note-body .node-body-h4 .note-body-note {
+  margin-left: 1rem;
+  color: #162050;
+  font-size: 1.8rem;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

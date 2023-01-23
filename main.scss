@@ -125,14 +125,21 @@ header{
       box-shadow: 0 0 0 2px $dark--one;
       border-radius: .5rem;
       padding: .6rem 1.2rem;
+      // 
+      // NOTE TITLE
+      // 
       & .note-title{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 1.5rem;
+        border-bottom: 1.5px solid $dark--one;
+        padding-bottom: 1rem;
         & .note-title-h4{
           font-size: 2.2rem;
           & .note--title{
             margin-left: 1rem;
+            color: $dark--two;
           }
         }
       }
@@ -140,6 +147,26 @@ header{
         font-size: 3.2rem;
         font-weight: 700;
         cursor: pointer;
+      }
+      // 
+      // NOTE BODY
+      // 
+      & .note-body{
+        transition: all .5s ease-in-out;
+        border-bottom: 1.5px solid $dark--one;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        & .node-body-h4{
+        font-size: 2.2rem;
+        display: flex;
+        gap: 1rem;
+        & .note-body-note{
+          margin-left: 1rem;
+          color: $dark--two;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+      }
       }
     }
   }
