@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
+:root{
+  --dark-one: #0b1028;
+  --dark-two: #162050;
+  --main-one: #364fc7;
+  --light-one: #d7dcf4;
+  --light-two: #8695dd;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body{
+  background: var(--light-one);
+  font-family: 'Poppins', sans-serif;
+}
+#new-note-section{
+  margin-top: 6rem;
+}
+.new-note-section-container{
+  width: 80%;
+  margin: 0 auto;
+}
+.create-note-form{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.create-note-title-input, .create-note-title-input:hover, .create-note-title-input:active{
+  border: none;
+  outline: none;
+  padding: 1rem .9rem 1rem .8rem;
+  box-shadow: 0 0 0 2px var(--dark-one);
+  font-size: 2.4rem;
+  border-radius: 1rem;
+}
+.create-note-title-input::placeholder, .create-note-body-input::placeholder{
+  color: var(--light-two);
+}
+.create-note-body-input{
+  border: none;
+  outline: none;
+  height: 250px;
+  font-size: 1.9rem;
+  padding: 1rem .9rem 1rem .8rem;
+  box-shadow: 0 0 0 2px var(--dark-one);
+  border-radius: 1rem;
+}
+.create-note-btn{
+  align-self: center;
+  color: var(--dark-one);
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  background: transparent;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 0 1.5px var(--dark-one);
+}
+.create-note-btn:hover,.create-note-btn:active{
+  background: var(--dark-one);
+  box-shadow: none;
+  color: var(--light-one);
+  border: none;
+  outline: none;
+}
