@@ -198,6 +198,12 @@ header{
       & .delete-note-icon{
         color: #a40b0b;
       }
+      & .edit-note-icon, & .delete-note-icon{
+        display: none;
+      }
+      & .showEditDeleteIcon{
+        display: block !important;
+      }
      }
     }
   }

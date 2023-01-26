@@ -186,6 +186,12 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
 #notes-section .notes-section-container .note-holder .edit-note-delete .delete-note-icon {
   color: #a40b0b;
 }
+#notes-section .notes-section-container .note-holder .edit-note-delete .edit-note-icon, #notes-section .notes-section-container .note-holder .edit-note-delete .delete-note-icon {
+  display: none;
+}
+#notes-section .notes-section-container .note-holder .edit-note-delete .showEditDeleteIcon {
+  display: block !important;
+}
 
 #footer-section {
   background: #0b1028;
