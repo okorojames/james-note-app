@@ -174,13 +174,31 @@ header{
       // 
       // FOOTER SECTION
       // 
-      & .footer-p{
+     & .footer-creation-date{
+      display: flex;
+      justify-content: space-between;
+      gap: 1.2rem;
+       & .footer-p{
         font-style: italic;
         font-weight: 500;
         & .date-created{
           color: $main--one;
         }
       }
+     }
+     & .edit-note-delete{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      & .edit-note-icon, & .delete-note-icon, & .three-dots-icon{
+        font-size: 2.2rem;
+        cursor: pointer;
+      }
+      & .delete-note-icon{
+        color: #a40b0b;
+      }
+     }
     }
   }
 }
