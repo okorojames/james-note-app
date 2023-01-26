@@ -73,6 +73,19 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   background: #d7dcf4;
   color: #162050;
 }
+header nav .hamburger {
+  display: none;
+}
+header nav .hamburger .burger {
+  width: 48px;
+  height: 3px;
+  background: #d7dcf4;
+  margin-bottom: 8px;
+  transition: all 0.5s ease-in-out;
+}
+header nav .hamburger .burger:last-child {
+  margin-bottom: 0;
+}
 
 #search-section {
   padding-top: 20rem;
@@ -187,10 +200,13 @@ header nav .nav-create-btn:hover, header nav .nav-create-btn:active {
   color: #a40b0b;
 }
 #notes-section .notes-section-container .note-holder .edit-note-delete .edit-note-icon, #notes-section .notes-section-container .note-holder .edit-note-delete .delete-note-icon {
-  display: none;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
 }
 #notes-section .notes-section-container .note-holder .edit-note-delete .showEditDeleteIcon {
-  display: block !important;
+  opacity: 1;
+  pointer-events: all;
 }
 
 #footer-section {

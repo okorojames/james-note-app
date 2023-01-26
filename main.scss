@@ -74,6 +74,19 @@ header{
       background: $light--one;
       color: $dark--two;
     }
+    & .hamburger{
+      display: none;
+      & .burger{
+        width: 48px;
+        height: 3px;
+        background: $light--one;
+        margin-bottom: 8px;
+        transition: all .5s ease-in-out;
+      }
+      & .burger:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 }
 // 
@@ -199,10 +212,15 @@ header{
         color: #a40b0b;
       }
       & .edit-note-icon, & .delete-note-icon{
-        display: none;
+        transition: all .6s ease-in-out;
+        // display: none;
+        opacity: 0;
+        pointer-events: none;
       }
       & .showEditDeleteIcon{
-        display: block !important;
+        // display: block !important;
+        opacity: 1;
+        pointer-events: all;
       }
      }
     }
@@ -235,4 +253,10 @@ header{
 // 
 .noteBodyToggle.note-body{
   display: block !important;
+}
+// 
+// MEDIA QUERIES
+// 
+@media screen and (max-width: 850px){
+  
 }
