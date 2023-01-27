@@ -29,6 +29,7 @@ header{
   background: $dark--two;
   z-index: 9999;
   & nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +82,7 @@ header{
         height: 3px;
         background: $light--one;
         margin-bottom: 8px;
+        border-radius: 1rem;
         transition: all .5s ease-in-out;
       }
       & .burger:last-child{
@@ -258,5 +260,67 @@ header{
 // MEDIA QUERIES
 // 
 @media screen and (max-width: 850px){
-  
+  .hamburger{
+    display: block !important;
+    cursor: pointer !important;
+  }
+  .nav-second-content{
+    position: fixed;
+    background: $main--one;
+    width: 100%;
+    height: 100%;
+    top: 17%;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .notes-section-container,.search-section-container{
+    width: 60% !important;
+  }
+}
+// 
+@media screen and (max-width: 764px){
+  .notes-section-container, .search-section-container{
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 660px){
+  .notes-section-container, .search-section-container, .footer-section-container{
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 576px){
+  nav{
+    gap: 3rem !important;
+  }
+  .footer-section-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .search-section-container{
+    flex-direction: column;
+  }
+  .notes-section-container{
+    margin-bottom: 15rem !important;
+  }
+}
+.onClickBurger.nav-second-content{
+  opacity: 1;
+  pointer-events: all;
+}
+.onClickBurger.burger-one{
+  transform: rotate(-45deg) translate(-11px, 0);
+}
+.onClickBurger.burger-two{
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.onClickBurger.burger-three{
+  transform: rotate(45deg) translate(-11px, 0);
 }
