@@ -12,6 +12,6 @@ function createFormInfo(e) {
   }
   noteArray.push(noteObject)
   localStorage.setItem("notes", JSON.stringify(noteArray))
-  document.querySelector(".create-note-title-input").value = "";
-  document.querySelector(".create-note-body-input").value = ""
+  createForm.reset()
+  location.assign("/index.html")
 }

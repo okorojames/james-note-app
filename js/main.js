@@ -86,7 +86,10 @@ document.querySelector('.notes-total-number').textContent = `(${noteArray.length
 console.log(noteArray);
 //
 // 
-noteContainer.addEventListener("click", function (e) {
-  e.preventDefault();
-  if(e.target.classList.includes("")){}
+document.querySelectorAll(".note-holder").forEach(noteHolder => {
+  noteHolder.addEventListener('click', function (e) {
+    if (e.target.classList.includes("note-title-arrow-icon")) {
+      document.querySelector(".note-body").style.display = "block";
+    }
+  })
 })
