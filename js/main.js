@@ -83,4 +83,10 @@ noteArray.forEach(note => {
 })
 
 document.querySelector('.notes-total-number').textContent = `(${noteArray.length})`
-console.log(noteArray)
+console.log(noteArray);
+//
+// 
+noteContainer.addEventListener("click", function (e) {
+  e.preventDefault();
+  if(e.target.classList.includes("")){}
+})
