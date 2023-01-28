@@ -138,6 +138,7 @@ header{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 8rem;
+    gap: 2rem;
     & .note-holder{
       box-shadow: 0 0 0 2px $dark--one;
       border-radius: .5rem;

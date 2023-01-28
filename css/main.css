@@ -132,6 +132,7 @@ header nav .hamburger .burger:last-child {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 8rem;
+  gap: 2rem;
 }
 #notes-section .notes-section-container .note-holder {
   box-shadow: 0 0 0 2px #0b1028;

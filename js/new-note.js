@@ -1,7 +1,7 @@
 const createForm = document.querySelector(".create-note-form")
 createForm.addEventListener("submit", createFormInfo)
 
-let noteArray = [];
+let noteArray = JSON.parse(localStorage.getItem("notes")) || [];
 
 function createFormInfo(e) {
   e.preventDefault();
@@ -12,6 +12,4 @@ function createFormInfo(e) {
   }
   noteArray.push(noteObject)
   localStorage.setItem("notes", JSON.stringify(noteArray))
-  
-  console.log(localStorage.getItem("note"))
 }
