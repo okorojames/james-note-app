@@ -220,11 +220,6 @@ header{
         opacity: 0;
         pointer-events: none;
       }
-      & .showEditDeleteIcon{
-        // display: block !important;
-        opacity: 1;
-        pointer-events: all;
-      }
      }
     }
   }
@@ -330,3 +325,12 @@ header{
 .onClickBurger.burger-three{
   transform: rotate(45deg) translate(-11px, 0);
 }
+// 
+// 
+.showBody{
+  display: block !important;
+}
+.showEditDeleteIcon{
+        opacity: 1 !important;
+        pointer-events: all !important;
+      }

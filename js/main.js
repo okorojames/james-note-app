@@ -7,26 +7,6 @@
     month: 'long',
     day: 'numeric',
 }
-  // 
-  // 
-// const dateCreated = document.querySelector('.date-created')
-// dateCreated.innerText += new Date().toLocaleString('en-US', DateOptions);
-//
-// 
-// const chevron = document.querySelector('.note-title-arrow-icon')
-// const noteBody = document.querySelector('.note-body')
-// chevron.addEventListener('click', () => {
-//   noteBody.classList.toggle('noteBodyToggle')
-// })
-//
-// 
-// const threeDots = document.querySelector('.three-dots-icon')
-// const editNoteIcon = document.querySelector('.edit-note-icon')
-// const deleteNoteIcon = document.querySelector('.delete-note-icon')
-// threeDots.addEventListener('click', function () {
-//   editNoteIcon.classList.toggle('showEditDeleteIcon')
-//   deleteNoteIcon.classList.toggle('showEditDeleteIcon')
-// })
 //
 // HAMBURGER FUNCTION
 // 
@@ -48,9 +28,9 @@ navCreateBtn.addEventListener('click', () => {
   })
 })
 const noteContainer = document.querySelector(".notes-section-container");
-console.log(noteContainer)
+// console.log(noteContainer)
 
-let noteArray = JSON.parse(localStorage.getItem("notes"))
+let noteArray = JSON.parse(localStorage.getItem("notes")) || []
 noteArray.forEach(note => {
   const notes = document.createElement('div')
   notes.innerHTML += `
@@ -83,13 +63,15 @@ noteArray.forEach(note => {
 })
 
 document.querySelector('.notes-total-number').textContent = `(${noteArray.length})`
-console.log(noteArray);
 //
-// 
+// .
 document.querySelectorAll(".note-holder").forEach(noteHolder => {
-  noteHolder.addEventListener('click', function (e) {
-    if (e.target.classList.includes("note-title-arrow-icon")) {
-      document.querySelector(".note-body").style.display = "block";
-    }
+  // console.log(noteHolder.children[1])
+  noteHolder.children[0].children[1].addEventListener('click', () => {
+    noteHolder.children[1].classList.toggle("showBody")
+  })
+  noteHolder.children[2].children[1].children[2].addEventListener('click', () => {
+    noteHolder.children[2].children[1].children[0].classList.toggle('showEditDeleteIcon')
+    noteHolder.children[2].children[1].children[1].classList.toggle('showEditDeleteIcon')
   })
 })

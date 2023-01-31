@@ -207,10 +207,6 @@ header nav .hamburger .burger:last-child {
   opacity: 0;
   pointer-events: none;
 }
-#notes-section .notes-section-container .note-holder .edit-note-delete .showEditDeleteIcon {
-  opacity: 1;
-  pointer-events: all;
-}
 
 #footer-section {
   background: #0b1028;
@@ -308,4 +304,13 @@ header nav .hamburger .burger:last-child {
 
 .onClickBurger.burger-three {
   transform: rotate(45deg) translate(-11px, 0);
+}
+
+.showBody {
+  display: block !important;
+}
+
+.showEditDeleteIcon {
+  opacity: 1 !important;
+  pointer-events: all !important;
 }/*# sourceMappingURL=main.css.map */
