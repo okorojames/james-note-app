@@ -52,7 +52,7 @@ noteArray.forEach(note => {
           <p class="footer-p">created on: <span class="date-created"></span></p>
           <div class="edit-note-delete">
             <i class="ri-pencil-line edit-note-icon"></i>
-            <i class="fa-solid fa-trash delete-note-icon"></i>
+            <i class="fa-solid fa-trash delete-note-icon" onclick= "deleteNote(${note.noteId})"></i>
             <i class="fa-solid fa-ellipsis-vertical three-dots-icon"></i>
           </div>
         </div>
@@ -75,3 +75,12 @@ document.querySelectorAll(".note-holder").forEach(noteHolder => {
     noteHolder.children[2].children[1].children[1].classList.toggle('showEditDeleteIcon')
   })
 })
+// 
+function deleteNote(noteId) {
+  // console.log(noteId)
+  let noteArray = JSON.parse(localStorage.getItem("notes"))
+  let noteIndex = noteArray.findIndex(note => note.noteId === noteId)
+  noteArray.splice(noteIndex, 1)
+  location.reload()
+  console.log(noteIndex)
+}

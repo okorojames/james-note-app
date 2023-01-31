@@ -7,8 +7,9 @@ function createFormInfo(e) {
   e.preventDefault();
   const noteTitle = e.target["create-note-title"].value.trim();
   const noteBody = e.target["create-note-body"].value.trim();
+  const noteId = Date.now()
   let noteObject = {
-    noteTitle,noteBody
+    noteTitle,noteBody,noteId
   }
   noteArray.push(noteObject)
   localStorage.setItem("notes", JSON.stringify(noteArray))
